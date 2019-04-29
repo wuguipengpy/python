@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="alcohol <= 12.79\nsamples = 133\nvalue = [44, 54, 35]\nclass = class_1", fillcolor="#39e5811d"] ;
+1 [label="alcohol <= 12.44\nsamples = 57\nvalue = [0, 48, 9]\nclass = class_1", fillcolor="#39e581cf"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="malic_acid <= 2.96\nsamples = 45\nvalue = [0, 42, 3]\nclass = class_1", fillcolor="#39e581ed"] ;
+1 -> 2 ;
+3 [label="samples = 38\nvalue = [0, 38, 0]\nclass = class_1", fillcolor="#39e581ff"] ;
+2 -> 3 ;
+4 [label="samples = 7\nvalue = [0, 4, 3]\nclass = class_1", fillcolor="#39e58140"] ;
+2 -> 4 ;
+5 [label="malic_acid <= 1.315\nsamples = 12\nvalue = [0, 6, 6]\nclass = class_1", fillcolor="#39e58100"] ;
+1 -> 5 ;
+6 [label="samples = 2\nvalue = [0, 0, 2]\nclass = class_2", fillcolor="#8139e5ff"] ;
+5 -> 6 ;
+7 [label="samples = 10\nvalue = [0, 6, 4]\nclass = class_1", fillcolor="#39e58155"] ;
+5 -> 7 ;
+8 [label="malic_acid <= 2.18\nsamples = 76\nvalue = [44, 6, 26]\nclass = class_0", fillcolor="#e581395c"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="malic_acid <= 1.18\nsamples = 45\nvalue = [38, 5, 2]\nclass = class_0", fillcolor="#e58139d2"] ;
+8 -> 9 ;
+10 [label="samples = 3\nvalue = [0, 3, 0]\nclass = class_1", fillcolor="#39e581ff"] ;
+9 -> 10 ;
+11 [label="samples = 42\nvalue = [38, 2, 2]\nclass = class_0", fillcolor="#e58139e6"] ;
+9 -> 11 ;
+12 [label="alcohol <= 14.19\nsamples = 31\nvalue = [6, 1, 24]\nclass = class_2", fillcolor="#8139e5b8"] ;
+8 -> 12 ;
+13 [label="samples = 29\nvalue = [4, 1, 24]\nclass = class_2", fillcolor="#8139e5cc"] ;
+12 -> 13 ;
+14 [label="samples = 2\nvalue = [2, 0, 0]\nclass = class_0", fillcolor="#e58139ff"] ;
+12 -> 14 ;
+}
